@@ -1,0 +1,76 @@
+/* Archivo: static/css/style.css */
+.nav-link {
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+main {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+main.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+    /* Tema claro (por defecto) */
+    .jumbotron {
+        background-color: #f8f9fa; /* Claro */
+        color: #212529;           /* Texto oscuro */
+    }
+
+/* Tema oscuro */
+body.dark-theme .jumbotron {
+    background-color: #343a40; /* Oscuro */
+    color: #ffffff;            /* Texto claro */
+}
+    
+
+/* Tema oscuro */
+    body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+    }
+
+    .bg-light {
+        background-color: #f8f9fa !important; /* Fondo claro */
+        color: #212529 !important;           /* Texto oscuro */
+    }
+    .bg-light .nav-link {
+        color: #212529 !important;           /* Color de enlaces en tema claro */
+    }
+    .bg-light .nav-link:hover {
+        color: #007bff !important;           /* Hover en tema claro */
+    }
+    
+    /* Tema oscuro */
+    body.dark-theme .bg-light {
+        background-color: #001429 !important; /* Fondo oscuro */
+        color: #ffffff !important;            /* Texto claro */
+    }
+    body.dark-theme .bg-light .nav-link {
+        color: #ffffff !important;            /* Color de enlaces en tema oscuro */
+    }
+    body.dark-theme .bg-light .nav-link:hover {
+        color: #17a2b8 !important;            /* Hover en tema oscuro */
+    }
+
+/* Tema claro */
+body .bg-light.border-right {
+    border-right: 1px solid #dee2e6 !important;
+}
+
+/* Tema oscuro */
+body.dark-theme .bg-light.border-right {
+    border-right: 1px solid #001124 !important;
+}
